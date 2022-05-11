@@ -4,7 +4,8 @@
   "description": "Get random Star Wars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./src/index.test.js -w",
+    "format": "prettier ./src/* -w"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,10 @@
     "url": "https://github.com/yamankatby/starwars-names/issues"
   },
   "homepage": "https://github.com/yamankatby/starwars-names#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "prettier": "^2.6.2"
+  }
 }
